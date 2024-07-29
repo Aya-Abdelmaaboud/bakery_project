@@ -1,0 +1,41 @@
+.footer {
+  padding: 20px 0;
+  @include bg-img-with-overlay(
+    "../../images/footer-bg.jpg",
+    rgba(0, 0, 0, 0.7)
+  );
+  &__content {
+    position: relative;
+    z-index: 2;
+    &__social {
+      ul {
+        list-style: none;
+        @extend %flex-center;
+        li {
+          i {
+            color: $icon-color;
+            font-size: 18px;
+          }
+          margin-left: 10px;
+          @include circle-social($footer-color, 40px, 40px);
+          &:hover {
+            i {
+              @include eleHover($main-color, $footer-color);
+            }
+          }
+        }
+      }
+    }
+    .logo {
+      @include img-with-container(150px);
+      margin: 30px auto;
+    }
+    &__address {
+      text-align: center;
+    }
+    &__copyright {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+}

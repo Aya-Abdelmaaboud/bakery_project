@@ -1,0 +1,13 @@
+.nav {
+  @extend %flex-between;
+  .menu {
+    @extend %flex-center;
+  }
+  &__menu__btn {
+    margin-left: 20px;
+    a:hover {
+      border-color: $main-color;
+      @include eleHover($main-color, white);
+    }
+  }
+}

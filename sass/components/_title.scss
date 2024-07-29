@@ -1,0 +1,11 @@
+.title {
+  @extend %flex-center;
+  margin: 40px 0;
+  position: relative;
+  &::before {
+    @include after-before($dash-color, 150px);
+  }
+  &::after {
+    @include after-before($main-color, 50px);
+  }
+}

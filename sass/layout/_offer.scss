@@ -1,0 +1,18 @@
+.offer {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: $gap;
+  }
+  .menu {
+    width: 50%;
+    margin: 60px auto;
+    a {
+      cursor: pointer;
+    }
+  }
+  &__button {
+    text-align: center;
+    margin: 50px 0;
+  }
+}

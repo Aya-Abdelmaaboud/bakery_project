@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__name,
+  &__email,
+  &__phone,
+  &__address,
+  &__date,
+  &__time {
+    padding: 10px;
+    width: 50%;
+    input {
+      width: 100%;
+      padding: 10px;
+      outline: 0;
+      border: 1px solid $form-border-color;
+    }
+  }
+  &__select {
+    padding: 10px;
+    width: 100%;
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $form-border-color;
+      outline: 0;
+    }
+  }
+  &__details {
+    padding: 10px;
+    width: 100%;
+    textarea {
+      width: 100%;
+      padding: 25px;
+      border: 1px solid $form-border-color;
+      outline: 0;
+    }
+  }
+  &__btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    a {
+      background-color: $main-color;
+      border-color: $main-color;
+      color: white;
+      &:hover {
+        border-color: $main-color;
+        @include eleHover($main-color, transparent);
+      }
+    }
+  }
+}

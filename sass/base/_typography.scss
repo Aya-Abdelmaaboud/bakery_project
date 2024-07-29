@@ -1,0 +1,82 @@
+.horizontal-card--font {
+  text-transform: capitalize;
+  @include font($titles-color, 16px, "Poppins", 600);
+}
+
+.horizontal-card__content__price--font {
+  @include font($main-color, 16px, "Open sans", 700);
+}
+
+.title--font {
+  text-transform: uppercase;
+  @include font($titles-color, 18px, "Open sans", 700);
+}
+
+.btn--font {
+  text-transform: uppercase;
+  text-decoration: none;
+  @include font($btn-color, 13px, "Poppins", 700);
+}
+
+.menu-font {
+  text-decoration: none;
+  @include font($titles-color, 14px, "Poppins", 700);
+}
+
+.vertical-card-title-font,
+.vertical-card-with-img__content__title--font {
+  text-transform: uppercase;
+  @include font($titles-color, 15px, "Poppins", 700);
+}
+
+.bakery-title-font {
+  @include font($titles-color, 18px, "Poppins", 700);
+}
+
+.main-font {
+  @include font($text-color, 14px, "Open sans", 400);
+}
+
+.welcome-font {
+  text-transform: uppercase;
+  @include font($main-color, 25px, "Open sans", 400);
+}
+
+.welcome-title-font {
+  text-transform: uppercase;
+  @include font(white, 30px, "Open sans", 700);
+}
+
+.welcome-info-font {
+  @include font(white, 16px, "Open sans", 400);
+}
+
+.menu-offer-font {
+  text-decoration: none;
+  @include font($text-color, 16px, "Open sans", 400);
+}
+
+.numbers__content__number__text--font {
+  @include font(white, 48px, "Poppins", 400);
+}
+.numbers__numbers__content__number__desc--font {
+  text-transform: capitalize;
+  @include font(white, 16px, "Open sans", 600);
+}
+
+.feedback__content__text--font {
+  @include font(white, 16px, "Open sans", 400);
+}
+
+.feedback__content__owner--font {
+  text-transform: uppercase;
+  @include font($main-color, 14px, "Poppins", 600);
+}
+
+.footer__content__address--font {
+  @include font($icon-color, 14px, "Open sans", 400);
+}
+
+.footer__content__copyright--font {
+  @include font($copyright-color, 12px, "Open sans", 400);
+}

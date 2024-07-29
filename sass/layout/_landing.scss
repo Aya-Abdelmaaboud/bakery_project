@@ -1,0 +1,20 @@
+.landing {
+  @include bg-img("../../images/slide-1.jpg");
+  height: calc(100vh - 110px);
+  @extend %flex-between;
+  padding: 20px;
+  &__next-arrow {
+    @extend %circle;
+    @extend %arrow-icons;
+  }
+  &__prev-arrow {
+    @extend %circle;
+    @extend %arrow-icons;
+  }
+  &__welcome-text {
+    text-align: center;
+    p {
+      margin: 10px 0;
+    }
+  }
+}

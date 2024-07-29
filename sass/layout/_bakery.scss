@@ -1,0 +1,38 @@
+.bakery {
+  display: flex;
+  .bakery__img {
+    @include bg-img("../../images/img-6.jpg");
+    width: 50%;
+  }
+  .bakery__content {
+    background-color: $section-color;
+    width: 50%;
+    padding: 50px;
+    position: relative;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      &::after {
+        @include after-before($main-color, 50px);
+        left: 52px;
+        top: 85px;
+      }
+    }
+    p {
+      margin-top: 20px;
+      line-height: $line-height;
+    }
+    &__btn {
+      margin-top: 30px;
+      a {
+        background-color: $main-color;
+        border-color: $main-color;
+        color: white;
+        &:hover {
+          border-color: $main-color;
+          @include eleHover($main-color, transparent);
+        }
+      }
+    }
+  }
+}

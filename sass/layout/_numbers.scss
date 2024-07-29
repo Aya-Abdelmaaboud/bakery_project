@@ -1,0 +1,26 @@
+.numbers {
+  @include bg-img-with-overlay(
+    "../../images/pattern-1.jpg",
+    rgba(235, 181, 118, 0.95)
+  );
+  background-repeat: repeat;
+  background-size: auto;
+  &__content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @extend %flex-between;
+    &__number {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      &__text {
+        margin-bottom: 30px;
+        &::after {
+          @include after-before(white, 30px);
+          top: 75px;
+          left: calc(50% - 15px);
+        }
+      }
+    }
+  }
+}

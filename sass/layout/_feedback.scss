@@ -1,0 +1,26 @@
+.feedback {
+  @include bg-img-with-overlay(
+    "../../images/parallax-2.jpg",
+    rgba(0, 0, 0, 0.7)
+  );
+  &__content {
+    position: relative;
+    z-index: 222;
+    @extend %flex-center;
+    flex-direction: column;
+    text-align: center;
+    &__img {
+      img {
+        border-radius: 50%;
+      }
+    }
+    &__text {
+      margin: 40px 0;
+      &::after {
+        @include after-before(white, 30px);
+        bottom: 40px;
+        left: calc(50% - 15px);
+      }
+    }
+  }
+}

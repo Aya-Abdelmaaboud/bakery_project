@@ -1,0 +1,15 @@
+.menu {
+  ul {
+    list-style: none;
+    @extend %flex-between;
+    a {
+      padding: 15px;
+      &:hover {
+        @include text-hover();
+      }
+    }
+    a.active {
+      color: $main-color;
+    }
+  }
+}
